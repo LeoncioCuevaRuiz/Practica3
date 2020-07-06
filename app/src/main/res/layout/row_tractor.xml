@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="25dp"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vrimagen"
+        android:layout_width="149dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/descripcion"
+        android:layout_width="174dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="descripcion"
+        app:layout_constraintStart_toEndOf="@+id/vrimagen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chofer"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/vrimagen"
+        app:layout_constraintTop_toBottomOf="@+id/placa" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/placa"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/vrimagen"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
